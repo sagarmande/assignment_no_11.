@@ -1,0 +1,21 @@
+Here's an assert statement that throws an AssertionError if the variable spam is a negative integer:
+assert spam >= 0, "spam cannot be a negative integer"
+This assert statement triggers an AssertionError if the variables eggs and bacon contain strings that are the same as each other, regardless of their case:
+assert eggs.lower() != bacon.lower(), "eggs and bacon should not have the same content (case-insensitive)"
+To create an assert statement that throws an AssertionError every time, you can simply use assert False:
+assert False, "This assertion always raises an error"
+To call logging.debug(), you need to include the following two lines in your software:
+import logging
+logging.basicConfig(level=logging.DEBUG)
+To have logging.debug() send a logging message to a file named programLog.txt, you can use these two lines:
+import logging
+logging.basicConfig(filename='programLog.txt', level=logging.DEBUG)
+The five levels of logging, from lowest to highest severity, are:
+
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+To disable all logging messages, you can add the following line of code to your software:
+logging.disable(logging.CRITICAL)
